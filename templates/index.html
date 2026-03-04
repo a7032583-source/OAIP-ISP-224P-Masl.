@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="POST">
+        <input type="text" name="a" placeholder="Введите число" required>
+        <input type="text" name="b" placeholder="Введите число" required>
+        <input type="text" name="c" placeholder="Введите число" required>
+        <button type="submit">Ввести число</button>
+    </form>
+{% if a > b %}
+    <p>{{a}}</p>
+{% elif a > c %}
+    <p>{{a}}</p>
+{% elif b > a %}
+    <p>{{b}}</p>
+{% elif b > c %}
+    <p>{{b}}</p>
+{% else %}
+    <p>{{c}}</p>
+{% endif %}
+</body>
+</html>
