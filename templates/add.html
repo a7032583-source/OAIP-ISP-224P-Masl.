@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">
+    <p>
+        <label>Название:<br></label>
+        <input type="text" name="title" required>
+    </p>
+    <p>
+        <label>Автор:<br></label>
+        <input type="text" name="author" required>
+    </p>
+    <p>
+        <label>Описание:<br></label>
+        <input type="text" name="description" required>
+    </p>
+    <p>
+        <label>Категория:<br></label>
+        <input type="text" name="category" required>
+    </p>
+    <button type="submit">Сохранить</button>
+    <a href="{{ url_for('materials') }}">Отмена</a>
+</form>
+
+</body>
+</html>

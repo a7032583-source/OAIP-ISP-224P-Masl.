@@ -1,0 +1,9 @@
+
+{% block content %}
+{% for material in materials %}
+<a href="{{ url_for('materials_detail', material_id=material.id) }}">
+<h3>{{ material.title }}</h3>
+<p>{{ material.author }}</p>
+{% endfor %}
+
+{% endblock %}
